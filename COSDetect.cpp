@@ -7,7 +7,7 @@
 
 int main() {
     // define arguments to as well as script names as variables here
-    std::string ip = " -I 192.168.13.37 "; // argument for -I parameter
+    std::string ip = " -I 192.168.1.232 "; // argument for -I parameter
     std::string port = " -P 1337"; // argument for -P parameter
 
     std::string arguments = ip + port;
