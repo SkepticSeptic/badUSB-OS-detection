@@ -9,3 +9,4 @@ this is simply a mix of c++, bash, and ps1 for a badusb to interact with in orde
 speaking of, windows isn't yet supported...
 i havent yet figured out how to compilWAIT WHAT IF I UPLOAD THE PRECOMPILED C++ CODE
 
+left off on: need to compile code as exe or something, then maybe run it before/after unix style OSDC?
