@@ -5,7 +5,7 @@ const char* detectType = "COSDetect.cpp"; // through C++, python, or bash?
 const char* folder = "COSD";
 
 // different payloads:
-const char* payload1 = "winRevShell.sh"; 
+const char* payload1 = "winRevShell.ps1"; 
 const char* payload2 = "macRevShell.sh";
 const char* payload3 = "linuxRevShell.sh";
 
